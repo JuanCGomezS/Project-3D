@@ -32,7 +32,10 @@ import {
   sonarqube,
   mysql,
   sqlserver,
-  firebase
+  firebase,
+  twitter,
+  download,
+  web
 } from "../assets/icons";
 
 export const skills = [
@@ -160,7 +163,7 @@ export const skills = [
     imageUrl: firebase,
     name: "Firebase",
     type: "Data Base",
-  }
+  },
 ];
 
 export const experiences = [
@@ -199,10 +202,86 @@ export const experiences = [
       "Como primer trabajo aprendi y crecio mi pasion por el mundo de la programación, entre como desarrollador frontend pero al pasar el tiempo termine haciendo multiples tareas.",
       "Crear aplicativos desde cero usando Angular y Spring Boot, realizar mantenimiento y mejoras, implementar diversos modulos en diferentes proyectos, crear consultas en bases de datos en MySql.",
     ],
-  }
+  },
+];
+
+export const studies = [
+  {
+    name: "Ingeniería Telemática",
+    date: "Actualmente",
+    content: "Universidad Distrital Bogotá D.C",
+    url: "https://docsdeveloper.s3.amazonaws.com/ing_tel.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/ing_tel.jpg",
+  },
+  {
+    name: "Curso Profesional de Git y GitHub",
+    date: "2024",
+    content: "Platzi",
+    url: "https://docsdeveloper.s3.amazonaws.com/git-github.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/git-github.jpg",
+  },
+  {
+    name: "Autenticación, Microservicios y Redis con NodeJS",
+    date: "2023",
+    content: "Platzi",
+    url: "https://docsdeveloper.s3.amazonaws.com/node.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/node.jpg",
+  },
+  {
+    name: "React.js",
+    date: "2023",
+    content: "Platzi",
+    url: "https://docsdeveloper.s3.amazonaws.com/react.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/react.jpg",
+  },
+  {
+    name: "Autenticación con Angular",
+    date: "2023",
+    content: "Platzi",
+    url: "https://docsdeveloper.s3.amazonaws.com/angular-autenticacion.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/angular.jpg",
+  },
+  {
+    name: "Curso Profesional de Scrum",
+    date: "2023",
+    content: "Platzi",
+    url: "https://docsdeveloper.s3.amazonaws.com/scrum.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/scrum.jpg",
+  },
+  {
+    name: "Introducción a la Nube",
+    date: "2023",
+    content: "Platzi",
+    url: "https://docsdeveloper.s3.amazonaws.com/intro-nube.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/intro-nube.jpg",
+  },
+  {
+    name: "Tecnólogo en Sistematización de Datos",
+    date: "2021",
+    content: "Universidad Distrital Bogotá D.C",
+    url: "https://docsdeveloper.s3.amazonaws.com/diploma_tecno.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/diploma.jpg",
+  },
+  {
+    name: "Controles y seguridad informática",
+    date: "2020",
+    content: "SENA",
+    url: "https://docsdeveloper.s3.amazonaws.com/seguridad_sena.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/seguridad_sena.jpg",
+  },
 ];
 
 export const socialLinks = [
+  {
+    name: "Twitter",
+    iconUrl: twitter,
+    link: "https://twitter.com/JuanCar21619604",
+  },
+  {
+    label: "Whatsapp",
+    iconUrl: contact,
+    link: "https://api.whatsapp.com/send?phone=+573013971483&text=Hello,%20from%20your%20blog!.",
+  },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
@@ -213,65 +292,57 @@ export const socialLinks = [
     iconUrl: github,
     link: "https://github.com/JuanCGomezS",
   },
-  {
-    name: "Twitter",
-    iconUrl: contact,
-    link: "https://twitter.com/JuanCar21619604",
-  },
-  {
-    label: "Whatsapp",
-    iconUrl: contact,
-    link: "https://api.whatsapp.com/send?phone=+573013971483&text=Hello,%20from%20your%20blog!.",
-  },
 ];
 
 export const projects = [
   {
-    iconUrl: pricewise,
-    theme: "btn-back-red",
-    name: "Amazon Price Tracker",
-    description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
-  },
-  {
-    iconUrl: threads,
+    iconUrl:
+      "https://docsdeveloper.s3.amazonaws.com/Proyectos/project-angular-net.png",
     theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    name: "Sales Management",
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
+      "Esta Aplicación Web se creó para resolver el problema de la falta de control sobre los productos y ventas en una Tienda. La gerencia no puede saber con certeza las unidades de un producto y el total de ventas realizadas en diferentes rangos de fechas.",
+    tecnology:
+      ".NET Core 6, Angular 16, SQL Server, Bootstrap y Angular Material",
+    github: "https://github.com/JuanCGomezS/technical-test-net",
+    githubIcon: github,
   },
   {
-    iconUrl: car,
+    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/project-vs-dark.png",
+    theme: "btn-back-green",
+    name: "Extensión Visual Studio Code",
+    description:
+      "Este proyecto es un tema personalizado para Visual Studio Code. Se ha creado desde cero y se ha diseñado para que resulte agradable a la vista y fácil de usar.",
+    tecnology:
+      "yo code - vsce (to create the extension), Azure - VS Marketplace (to publish the extension)",
+    github: "https://github.com/JuanCGomezS/extension-vs",
+    githubIcon: github,
+    download:
+      "https://marketplace.visualstudio.com/items?itemName=JCcolors.jc-extension",
+    downloadIcon: download,
+  },
+  {
+    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/project-portfolio-dark.png",
     theme: "btn-back-blue",
-    name: "Car Finding App",
+    name: "Portfolio Profesional",
     description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
+      "Este es otro portafolio profesional creado por mi, un lugar donde puedes aprender más sobre mí, mi trabajo y mis habilidades como desarrollador.",
+    tecnology: "Astro, React y tailwind",
+    github: "https://github.com/JuanCGomezS/juancgomezs.github.io",
+    githubIcon: github,
+    website: "https://juancgomezs.github.io/",
+    websiteIcon: web,
   },
   {
-    iconUrl: snapgram,
-    theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/portafolio3D.png",
+    theme: "btn-back-blue",
+    name: "Portfolio Profesional 3D",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
-  },
-  {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Real-Estate Application",
-    description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
-  },
-  {
-    iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
-    description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "En este portafolio implemento elementos y animaciones en 3D usando Three.js",
+    tecnology: "Vite, React, Three.js y tailwind",
+    github: "https://github.com/JuanCGomezS/Project-3D",
+    githubIcon: github,
+    website: "https://juancgomezs.github.io/Project-3D/",
+    websiteIcon: web,
   },
 ];

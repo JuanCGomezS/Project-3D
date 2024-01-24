@@ -14,8 +14,8 @@ import redux from './redux.svg'
 import sass from './sass.svg'
 import tailwindcss from './tailwindcss.svg'
 import typescript from './typescript.svg'
-import linkedin from './linkedin.svg'
-import twitter from './twitter.svg'
+import linkedin from './linkedin.png'
+import twitter from './twitter.png'
 import car from './car.svg'
 import estate from './estate.svg'
 import pricewise from './pricewise.svg'
@@ -40,6 +40,8 @@ import sonarqube from './sonarqube.png'
 import mysql from './mysql.png'
 import sqlserver from './sqlserver.svg'
 import firebase from './firebase.png'
+import download from './download.png'
+import web from './web.png'
 
 export {
     css,
@@ -83,5 +85,7 @@ export {
     sonarqube,
     mysql,
     sqlserver,
-    firebase
+    firebase,
+    download,
+    web
 }

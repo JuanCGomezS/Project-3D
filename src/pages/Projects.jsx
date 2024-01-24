@@ -6,62 +6,79 @@ import { arrow } from "../assets/icons";
 
 const Projects = () => {
   return (
-    <section className='max-container'>
-      <h1 className='head-text'>
-        My{" "}
-        <span className='blue-gradient_text drop-shadow font-semibold'>
-          Projects
+    <section className="max-container">
+      <h1 className="head-text">
+        Mis{" "}
+        <span className="blue-gradient_text drop-shadow font-semibold">
+          Projectos
         </span>
       </h1>
 
-      <p className='text-slate-500 mt-2 leading-relaxed'>
-        I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. Many of them are open-source, so if
-        you come across something that piques your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
-      </p>
+      {projects.map((project) => (
+        <div class="mx-auto py-10 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h4 className="text-2xl font-poppins font-semibold">
+              {project.name}
+            </h4>
+            <p className="mt-2 text-slate-500">{project.description}</p>
+            <p className="mt-2 text-slate-900">
+              Tecnologias: {project.tecnology}
+            </p>
 
-      <div className='flex flex-wrap my-20 gap-16'>
-        {projects.map((project) => (
-          <div className='lg:w-[400px] w-full' key={project.name}>
-            <div className='block-container w-12 h-12'>
-              <div className={`btn-back rounded-xl ${project.theme}`} />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
-                <img
-                  src={project.iconUrl}
-                  alt='threads'
-                  className='w-1/2 h-1/2 object-contain'
-                />
-              </div>
-            </div>
-
-            <div className='mt-5 flex flex-col'>
-              <h4 className='text-2xl font-poppins font-semibold'>
-                {project.name}
-              </h4>
-              <p className='mt-2 text-slate-500'>{project.description}</p>
-              <div className='mt-5 flex items-center gap-2 font-poppins'>
-                <Link
-                  to={project.link}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='font-semibold text-blue-600'
+            <div className="flex flex-row my-3">
+              {project.github && (
+                <a
+                  href={`${project.github}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Live Link
-                </Link>
-                <img
-                  src={arrow}
-                  alt='arrow'
-                  className='w-4 h-4 object-contain'
-                />
-              </div>
+                  <img
+                    src={project.githubIcon}
+                    alt="Imagen de certificado"
+                    className="m-3 rounded-2xl h-7 w-7"
+                  />
+                </a>
+              )}
+              {project.download && (
+                <a
+                  href={`${project.download}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={project.downloadIcon}
+                    alt="Imagen de certificado"
+                    className="m-3 rounded-2xl h-7 w-7"
+                  />
+                </a>
+              )}
+              {project.website && (
+                <a
+                  href={`${project.website}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={project.websiteIcon}
+                    alt="Imagen de certificado"
+                    className="m-3 rounded-2xl h-7 w-7"
+                  />
+                </a>
+              )}
             </div>
           </div>
-        ))}
-      </div>
 
-      <hr className='border-slate-200' />
+          <div>
+            <img
+              class="opacity-90 rounded-lg shadow-lg"
+              src={`${project.iconUrl}`}
+              alt="Logo"
+            />
+          </div>
+        </div>
+      ))}
+
+      <hr className="border-slate-200" />
 
       <CTA />
     </section>

@@ -4,7 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 
 import { CTA } from "../components";
-import { experiences, skills } from "../constants";
+import { experiences, skills, studies } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 import React, { useState } from "react";
@@ -127,36 +127,40 @@ const About = () => {
       </div>
 
       <div className="py-10 flex flex-col">
-        <h3 className="subhead-text">Habilidades</h3>
-        <div className="mt-16 flex flex-wrap gap-12">
-          <div className="block-container-ex">
-            <div class="btn-back rounded-2xl h-52 w-44 bg-gray-400"></div>
-            <div class="h-52 w-44 rotate-6 space-y-6 rounded-2xl bg-green-200 p-6 transition duration-300 hover:rotate-0">
-              <div class="flex justify-end">
-                <div class="h-4 w-4 rounded-full bg-gray-900"></div>
+        <h3 className="subhead-text">Estudios</h3>
+
+        <div className="items-center mt-16 flex flex-wrap gap-12">
+          {studies.map((studies, index) => (
+            <div key={index} className="block-container-ex">
+              <div className="btn-back rounded-2xl h-[325px] w-64 bg-gray-400"></div>
+              <div className="h-[325px] w-64 space-y-6 rounded-2xl bg-gradient-to-r from-[#D6EAF8] to-[#AED6F1] transition duration-300 hover:-rotate-6">
+                <img
+                  src={studies.img}
+                  alt="Imagen de certificado"
+                  className="rounded-2xl h-44 w-64"
+                />
+
+                <div className="px-5">
+                  <p className="text-center text-5xs font-extrabold text-gray-900 hover:text-[#0072ff] cursor-pointer">
+                    <a
+                      href={`${studies.url}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {studies.name}
+                    </a>
+                  </p>
+
+                  <p className="text-center text-xs font-extrabold text-gray-600">
+                    {studies.date}
+                  </p>
+                  <p className="text-center text-4xs font-extrabold text-gray-600">
+                    {studies.content}
+                  </p>
+                </div>
               </div>
-
-              <header class="text-center text-xs font-extrabold text-gray-600">
-                2021.09.01
-              </header>
-
-              <div>
-                <p class="text-center text-5xs font-extrabold text-gray-900">
-                  Online Test (Physics)
-                </p>
-                <p class="text-center text-4xs font-extrabold text-[#FE5401]">
-                  2 hours
-                </p>
-              </div>
-
-              {/* <footer class="mb-10 flex justify-center">
-          <button class="flex items-baseline gap-2 rounded-lg bg-[#FE5401] px-4 py-2.5 text-xl font-bold text-white hover:bg-[#FF7308]">
-            <span>Start</span>
-            <i class="fas fa-hand-peace text-xl"></i>
-          </button>
-        </footer> */}
             </div>
-          </div>
+          ))}
         </div>
       </div>
 
