@@ -345,4 +345,16 @@ export const projects = [
     website: "https://juancgomezs.github.io/Project-3D/",
     websiteIcon: web,
   },
+  {
+    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/MediaRecorder.png",
+    theme: "btn-back-blue",
+    name: "Capturador de pantalla",
+    description:
+      "En este proyecto he realizado un capturador de pantalla básico",
+    tecnology: "JS",
+    github: "https://github.com/JuanCGomezS/MediaRecorder",
+    githubIcon: github,
+    website: "https://juancgomezs.github.io/MediaRecorder/",
+    websiteIcon: web,
+  }
 ];
