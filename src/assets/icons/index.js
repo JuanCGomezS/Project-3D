@@ -29,6 +29,7 @@ import soundoff from './soundoff.png'
 import scrum from './scrum.png'
 import spring from './spring.png'
 import net from './net.png'
+import framework from './framework.png'
 import jsf from './jsf.png'
 import angular from './angular.png'
 import bootstrap from './bootstrap.webp'
@@ -75,6 +76,7 @@ export {
     scrum,
     spring,
     net,
+    framework,
     jsf,
     angular,
     bootstrap,
