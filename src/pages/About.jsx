@@ -34,9 +34,7 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Como desarrollador de software, mi integridad, disciplina y una
-          mentalidad emprendedora se complementan con la gran capacidad para
-          trabajar en equipo y el deseo de aprender y crecer cada día.
+          Me complace tener esta oportunidad para contarte sobre mí. Como desarrollador de software, mi compromiso con la integridad y la disciplina se combina perfectamente con una mentalidad emprendedora. Esta combinación me permite no solo contribuir significativamente a los equipos en los que trabajo, sino también buscar constantemente formas de mejorar y expandir mis habilidades. Mi pasión por el aprendizaje constante y mi deseo de crecimiento diario son lo que me impulsa a superarme cada día.
         </p>
       </div>
 
@@ -58,7 +56,8 @@ const About = () => {
                   alt={skill.name}
                   className="w-1/2 h-1/2 object-contain"
                 />
-                {activeTooltip === index && <Tooltip content={skill.name} />}
+                {/* {activeTooltip === index && <Tooltip style={{ fontSize: "5px" }} content={skill.name} />} */}
+                {activeTooltip === index && (<Tooltip content={<div style={{ fontSize: "12px" }}>{skill.name}</div>} />)}
               </div>
             </div>
           ))}
@@ -68,10 +67,8 @@ const About = () => {
       <div className="py-16">
         <h3 className="subhead-text">Experiencia</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p>
-            He trabajado con tres tipos de empresas, que han ayudado a mejorar
-            mis habilidades y a relacionarme con personas inteligentes. Aquí
-            presento el resumen:
+          <p> 
+            Mi trayectoria profesional ha sido enriquecedora, he tenido la oportunidad de colaborar con tres tipos distintos de empresas y multiples proyectos. Cada una de ellas ha jugado un papel crucial en mi evolución, permitiéndome ampliar mis habilidades técnicas y fortalecer mis relaciones con colegas altamente capacitados. Este recorrido me ha dotado de una comprensión profunda del sector, así como de la importancia de adaptarse y crecer dentro de diferentes entornos empresariales.
           </p>
         </div>
 

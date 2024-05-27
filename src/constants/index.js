@@ -22,6 +22,7 @@ import {
   scrum,
   spring,
   net,
+  framework,
   jsf,
   angular,
   bootstrap,
@@ -62,6 +63,11 @@ export const skills = [
   {
     imageUrl: net,
     name: ".NET Core",
+    type: "Backend",
+  },
+  {
+    imageUrl: framework,
+    name: ".NET Framework",
     type: "Backend",
   },
   {
@@ -214,6 +220,13 @@ export const studies = [
     img: "https://docsdeveloper.s3.amazonaws.com/certificados/ing_tel.jpg",
   },
   {
+    name: "Tecnólogo en Sistematización de Datos",
+    date: "2021",
+    content: "Universidad Distrital Bogotá D.C",
+    url: "https://docsdeveloper.s3.amazonaws.com/diploma_tecno.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/diploma.jpg",
+  },
+  {
     name: "Curso Profesional de Git y GitHub",
     date: "2024",
     content: "Platzi",
@@ -254,13 +267,6 @@ export const studies = [
     content: "Platzi",
     url: "https://docsdeveloper.s3.amazonaws.com/intro-nube.pdf",
     img: "https://docsdeveloper.s3.amazonaws.com/certificados/intro-nube.jpg",
-  },
-  {
-    name: "Tecnólogo en Sistematización de Datos",
-    date: "2021",
-    content: "Universidad Distrital Bogotá D.C",
-    url: "https://docsdeveloper.s3.amazonaws.com/diploma_tecno.pdf",
-    img: "https://docsdeveloper.s3.amazonaws.com/certificados/diploma.jpg",
   },
   {
     name: "Controles y seguridad informática",
@@ -322,6 +328,18 @@ export const projects = [
     downloadIcon: download,
   },
   {
+    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/MediaRecorder.png",
+    theme: "btn-back-blue",
+    name: "Capturador de pantalla",
+    description:
+      "En este proyecto he realizado un capturador de pantalla básico y gratuito.",
+    tecnology: "JS",
+    github: "https://github.com/JuanCGomezS/MediaRecorder",
+    githubIcon: github,
+    website: "https://juancgomezs.github.io/MediaRecorder/",
+    websiteIcon: web,
+  },
+  {
     iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/project-portfolio-dark.png",
     theme: "btn-back-blue",
     name: "Portfolio Profesional",
@@ -333,7 +351,7 @@ export const projects = [
     website: "https://juancgomezs.github.io/",
     websiteIcon: web,
   },
-  {
+  /* {
     iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/portafolio3D.png",
     theme: "btn-back-blue",
     name: "Portfolio Profesional 3D",
@@ -344,17 +362,5 @@ export const projects = [
     githubIcon: github,
     website: "https://juancgomezs.github.io/Project-3D/",
     websiteIcon: web,
-  },
-  {
-    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/MediaRecorder.png",
-    theme: "btn-back-blue",
-    name: "Capturador de pantalla",
-    description:
-      "En este proyecto he realizado un capturador de pantalla básico",
-    tecnology: "JS",
-    github: "https://github.com/JuanCGomezS/MediaRecorder",
-    githubIcon: github,
-    website: "https://juancgomezs.github.io/MediaRecorder/",
-    websiteIcon: web,
-  }
+  }, */
 ];
