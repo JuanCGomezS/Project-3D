@@ -130,7 +130,7 @@ const About = () => {
           {studies.map((studies, index) => (
             <div key={index} className="block-container-ex">
               <div className="btn-back rounded-2xl h-[325px] w-64 bg-gray-400"></div>
-              <div className="h-[325px] w-64 space-y-6 rounded-2xl bg-gradient-to-r from-[#D6EAF8] to-[#AED6F1] transition duration-300 hover:-rotate-6">
+              <div className="h-[325px] w-64 space-y-6 rounded-2xl bg-gradient-to-r from-[#D6EAF8] to-[#AED6F1] transition duration-300 hover:-rotate-2">
                 <img
                   src={studies.img}
                   alt="Imagen de certificado"
