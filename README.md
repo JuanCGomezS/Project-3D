@@ -25,23 +25,35 @@ Ver en [https://juancgomezs.github.io/Project-3D](https://juancgomezs.github.io/
 ### Instalación
 
 Para instalar las dependencias del proyecto, usar el siguiente comando:
-npm install
+
+```bash
+    npm install
+```
 
 ### Desarrollo
 Para iniciar el entorno de desarrollo, usa el siguiente comando:
-npm run dev
+
+```bash
+    npm run dev
+```
 
 Esto iniciará un servidor de desarrollo en http://localhost:3000 (o en el puerto configurado).
 
 ### Construcción
 Para construir la aplicación para producción, usar:
-npm run build
+
+```bash
+    npm run build
+```
 
 Esto generará una carpeta dist con los archivos estáticos listos para desplegar.
 
 ### Despliegue
 Para desplegar la aplicación en GitHub Pages, usar el siguiente comando:
-npm run deploy
+
+```bash
+    npm run deploy
+```
 
 Asegúrarse de que el repositorio de GitHub esté configurado correctamente para GitHub Pages.
 
