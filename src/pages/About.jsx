@@ -56,8 +56,7 @@ const About = () => {
                   alt={skill.name}
                   className="w-1/2 h-1/2 object-contain"
                 />
-                {/* {activeTooltip === index && <Tooltip style={{ fontSize: "5px" }} content={skill.name} />} */}
-                {activeTooltip === index && (<Tooltip content={<div style={{ fontSize: "12px" }}>{skill.name}</div>} />)}
+                {activeTooltip === index && (<Tooltip content={<div style={{ fontSize: "13px", margin: "10px" }}>{skill.name}</div>} />)}
               </div>
             </div>
           ))}
