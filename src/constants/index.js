@@ -36,7 +36,9 @@ import {
   firebase,
   twitter,
   download,
-  web
+  web,
+  PA,
+  AF
 } from "../assets/icons";
 
 export const skills = [
@@ -148,12 +150,12 @@ export const skills = [
   {
     imageUrl: jenkins,
     name: "Jenkins",
-    type: "Frontend",
+    type: "Automation",
   },
   {
     imageUrl: sonarqube,
     name: "SonarQube",
-    type: "Frontend",
+    type: "Automation",
   },
   {
     imageUrl: mysql,
@@ -170,6 +172,16 @@ export const skills = [
     name: "Firebase",
     type: "Data Base",
   },
+  {
+    imageUrl: AF,
+    name: "Azure Functions",
+    type: "Automation",
+  },
+  {
+    imageUrl: PA,
+    name: "Power Automate",
+    type: "Automation",
+  }
 ];
 
 export const experiences = [
@@ -342,7 +354,7 @@ export const projects = [
     theme: "btn-back-green",
     name: "Sales Management",
     description:
-      "Esta Aplicación Web se creó para resolver el problema de la falta de control sobre los productos y ventas en una Tienda. La gerencia no puede saber con certeza las unidades de un producto y el total de ventas realizadas en diferentes rangos de fechas.",
+      "Esta Aplicación Web se creó para llevar control sobre los productos y ventas en una Tienda. Uno de sus usos es saber con certeza las unidades de un productos y el total de ventas realizadas en diferentes rangos de fechas.",
     tecnology:
       ".NET Core 6, Angular 16, SQL Server, Bootstrap y Angular Material",
     github: "https://github.com/JuanCGomezS/technical-test-net",
@@ -379,23 +391,11 @@ export const projects = [
     theme: "btn-back-blue",
     name: "Portfolio Profesional",
     description:
-      "Este es otro portafolio profesional creado por mi, un lugar donde puedes aprender más sobre mí, mi trabajo y mis habilidades como desarrollador.",
+      "Este portafolio desarrollado con Astro, es un lugar donde puedes saber más sobre mí, mi trabajo y mis habilidades como desarrollador.",
     tecnology: "Astro, React y tailwind",
     github: "https://github.com/JuanCGomezS/juancgomezs.github.io",
     githubIcon: github,
     website: "https://juancgomezs.github.io/",
     websiteIcon: web,
-  },
-  /* {
-    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/portafolio3D.png",
-    theme: "btn-back-blue",
-    name: "Portfolio Profesional 3D",
-    description:
-      "En este portafolio implemento elementos y animaciones en 3D usando Three.js",
-    tecnology: "Vite, React, Three.js y tailwind",
-    github: "https://github.com/JuanCGomezS/Project-3D",
-    githubIcon: github,
-    website: "https://juancgomezs.github.io/Project-3D/",
-    websiteIcon: web,
-  }, */
+  }
 ];

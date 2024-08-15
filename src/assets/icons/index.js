@@ -43,6 +43,8 @@ import sqlserver from './sqlserver.svg'
 import firebase from './firebase.png'
 import download from './download.png'
 import web from './web.png'
+import AF from './AF.png'
+import PA from './PA.png'
 
 export {
     css,
@@ -89,5 +91,7 @@ export {
     sqlserver,
     firebase,
     download,
-    web
+    web,
+    AF,
+    PA
 }
