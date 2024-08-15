@@ -21,7 +21,7 @@ const HomeInfo = ({ currentStage }) => {
           Conoce un poco sobre <br /> mi Experiencia y Estudios
         </p>
 
-        <Link to='/Project-3D/about' className='neo-brutalism-white neo-btn'>
+        <Link to='/about' className='neo-brutalism-white neo-btn'>
           Ver más
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
@@ -36,7 +36,7 @@ const HomeInfo = ({ currentStage }) => {
           Algunos de mis proyectos
         </p>
 
-        <Link to='/Project-3D/projects' className='neo-brutalism-white neo-btn'>
+        <Link to='/projects' className='neo-brutalism-white neo-btn'>
           Ver más
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
@@ -51,7 +51,7 @@ const HomeInfo = ({ currentStage }) => {
         ¿Deseas contactarme?
       </p>
 
-      <Link to='/Project-3D/contact' className='neo-brutalism-white neo-btn'>
+      <Link to='/contact' className='neo-brutalism-white neo-btn'>
         Escribeme
         <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
       </Link>
