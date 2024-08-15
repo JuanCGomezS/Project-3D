@@ -8,15 +8,15 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/Project-3D' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route
             path='/*'
             element={
               <>
                 <Routes>
-                  <Route path='/Project-3D/about' element={<About />} />
-                  <Route path='/Project-3D/projects' element={<Projects />} />
-                  <Route path='/Project-3D/contact' element={<Contact />} />
+                  <Route path='/about' element={<About />} />
+                  <Route path='/projects' element={<Projects />} />
+                  <Route path='/contact' element={<Contact />} />
                 </Routes>
                 <Footer />
               </>
