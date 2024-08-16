@@ -349,6 +349,18 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: "https://juancgomezs.github.io/ChatGPT",
+    theme: "btn-back-blue",
+    name: "ChatGPT",
+    description:
+      "Este proyecto es un prototipo de ChatGPT que se ejecuta completamente en el cliente, utilizando tecnologías avanzadas como WebLLM, WebGPU y Web Workers. El objetivo es demostrar cómo es posible compilar y ejecutar un modelo de lenguaje como ChatGPT directamente en el navegador sin necesidad de servidores externos.",
+    tecnology: "JS, Html, CSS",
+    github: "https://github.com/JuanCGomezS/ChatGPT",
+    githubIcon: github,
+    website: "https://juancgomezs.github.io/ChatGPT",
+    websiteIcon: web,
+  },
+  {
     iconUrl:
       "https://docsdeveloper.s3.amazonaws.com/Proyectos/project-angular-net.png",
     theme: "btn-back-green",

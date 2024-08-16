@@ -7,7 +7,7 @@ const Projects = () => {
       <h1 className="head-text">
         Mis{" "}
         <span className="blue-gradient_text drop-shadow font-semibold">
-          Projectos
+        Proyectos
         </span>
       </h1>
 
@@ -49,6 +49,7 @@ const Projects = () => {
                   />
                 </a>
               )}
+
               {project.website && (
                 <a
                   href={`${project.website}`}
@@ -65,13 +66,16 @@ const Projects = () => {
             </div>
           </div>
 
+          {project.name == 'ChatGPT' ?
+          <iframe class="opacity-90 rounded-lg shadow-lg" id="chatgptid" title="chatgpt" width="100%" height="350px" src="https://juancgomezs.github.io/ChatGPT"></iframe>
+          :
           <div>
             <img
               class="opacity-90 rounded-lg shadow-lg"
               src={`${project.iconUrl}`}
               alt="Logo"
             />
-          </div>
+          </div>}
         </div>
       ))}
 
