@@ -239,6 +239,13 @@ export const studies = [
     img: "https://docsdeveloper.s3.amazonaws.com/certificados/diploma.jpg",
   },
   {
+    name: "Bases de Datos con SQL",
+    date: "2024",
+    content: "Platzi",
+    url: "https://docsdeveloper.s3.amazonaws.com/sql.pdf",
+    img: "https://docsdeveloper.s3.amazonaws.com/certificados/sql.jpg",
+  },
+  {
     name: "Curso Profesional de Git y GitHub",
     date: "2024",
     content: "Platzi",
