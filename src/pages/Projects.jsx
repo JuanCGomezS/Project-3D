@@ -7,12 +7,15 @@ const Projects = () => {
       <h1 className="head-text">
         Mis{" "}
         <span className="blue-gradient_text drop-shadow font-semibold">
-        Proyectos
+          Proyectos
         </span>
       </h1>
 
       {projects.map((project) => (
-        <div class="mx-auto py-10 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div
+          key={project.name}
+          class="mx-auto py-10 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+        >
           <div>
             <h4 className="text-2xl font-poppins font-semibold">
               {project.name}
@@ -66,16 +69,13 @@ const Projects = () => {
             </div>
           </div>
 
-          {project.name == 'ChatGPT' ?
-          <iframe class="opacity-90 rounded-lg shadow-lg" id="chatgptid" title="chatgpt" width="100%" height="350px" src="https://juancgomezs.github.io/ChatGPT"></iframe>
-          :
-          <div>
+          <div class="flex justify-center items-center h-full">
             <img
-              class="opacity-90 rounded-lg shadow-lg"
+              class="opacity-90 rounded-lg shadow-lg max-h-[250px]"
               src={`${project.iconUrl}`}
               alt="Logo"
             />
-          </div>}
+          </div>
         </div>
       ))}
 
