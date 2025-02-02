@@ -1,4 +1,4 @@
-import { synergias, cpr, solredes } from "../assets/images";
+import { synergias, cpr, solredes, ilao } from "../assets/images";
 import {
   car,
   contact,
@@ -38,7 +38,7 @@ import {
   download,
   web,
   PA,
-  AF
+  AF,
 } from "../assets/icons";
 
 export const skills = [
@@ -181,44 +181,74 @@ export const skills = [
     imageUrl: PA,
     name: "Power Automate",
     type: "Automation",
-  }
+  },
 ];
 
 export const experiences = [
   {
-    title: "Desarrollador Full Stack",
-    company_name: "Synergias",
-    icon: synergias,
-    iconBg: "#ABEBC6",
-    date: "Jul 2023 - Actualmente",
+    title: "Desarrollador Backend Python",
+    company_name: "Grupo Ilao",
+    icon: ilao,
+    iconBg: "#ffecdefa",
+    date: "Oct 2024 - Actualmente",
     points: [
-      "Desarrollo y realizo mantenimiento de aplicaciones web utilizando .Net y React entre otras tecnologías.",
-      "Colaboro con un equipo multifuncional bajo la metodología Scrum.",
-      "Mis principales tareas son implementar servicios Api Rest y Soap, realizar mantenimiento del aplicativo, implementar nuevas funcionalidades, crear consultas y procedimientos en SQL Server y solucionar errores que se presenten.",
+      "Desarrollo y mantenimiento de funcionalidades en Python (Django).",
+      "Gestión de migraciones de base de datos con el ORM de Django.",
+      "Realización de pruebas para garantizar la calidad del código.",
+      "Uso de Sentry para monitoreo de errores.",
+      "Implementación de CI/CD con GitHub Actions.",
+      "Manejo de entornos con Docker y Dev Containers.",
+      "Participación en planificación ágil bajo Scrum.",
+      "Colaboración continua con el mismo líder desde CPR y Synergias, fortaleciendo confianza y aprendizaje.",
     ],
   },
   {
     title: "Desarrollador Full Stack",
+    company_name: "Synergias",
+    icon: synergias,
+    iconBg: "#ddffeb",
+    date: "Jul 2023 - Oct 2023",
+    points: [
+      "Desarrollo y mantenimiento de aplicaciones web utilizando .NET y React.",
+      "Implementación y optimización de API REST y SOAP.",
+      "Creación y mantenimiento de consultas y procedimientos en SQL Server.",
+      "Resolución de errores y mejora continua del aplicativo.",
+      "Colaboración en un equipo multifuncional bajo la metodología Scrum.",
+      "Implementación de autenticación con JWT e integración de SSO con Auth0.",
+      "Desarrollo de Azure Functions para procesamiento de datos.",
+      "Extracción y análisis de información en documentos mediante modelos de IA de Azure.",
+    ],
+  },
+  {
+    title: "Subdirector de Desarrollo",
     company_name: "CPR Servicios y Consultoría SAS",
     icon: cpr,
-    iconBg: "#F9E79F",
+    iconBg: "#dddcff",
     date: "Sep 2021 - Jun 2023",
     points: [
-      "Desarrollé y realicé mantenimiento a aplicaciones web utilizando Node JS y Angular entre otras tecnologías.",
-      "Equipo de desarrollo pequeño trabajando bajo la metodología Scrum.",
-      "Mis Principales tareas eran implementar nuevos módulos, consumir diferentes tipos de servicios y crear una estructura a partir de ellos, realizar mantenimiento al aplicativo, realizar consultas en MySql y atender los requerimientos de los usuarios.",
+      "Desarrollo y mantenimiento de aplicaciones web utilizando Node.js y Angular.",
+      "Implementación de nuevos módulos y consumo de diversos servicios.",
+      "Diseño y estructuración de datos a partir de integraciones con múltiples fuentes.",
+      "Optimización y mantenimiento del aplicativo para mejorar su rendimiento.",
+      "Creación y gestión de consultas en MySQL.",
+      "Atención y resolución de requerimientos de los usuarios.",
+      "Trabajo en un equipo de desarrollo pequeño bajo la metodología Scrum.",
     ],
   },
   {
     title: "Desarrollador Web",
     company_name: "Solredes SAS",
     icon: solredes,
-    iconBg: "#E8DAEF",
+    iconBg: "#f5e0ff",
     date: "Ago 2020 - Sep 2021",
     points: [
-      "Aprendí, Desarrollé y realicé mantenimiento a aplicaciones web utilizando Spring Boot, Angular, React, Flutter, JSF entre otras tecnologías.",
-      "Como primer trabajo aprendi y crecio mi pasion por el mundo de la programación, entre como desarrollador frontend pero al pasar el tiempo termine haciendo multiples tareas.",
-      "Crear aplicativos desde cero usando Angular y Spring Boot, realizar mantenimiento y mejoras, implementar diversos modulos en diferentes proyectos, crear consultas en bases de datos en MySql.",
+      "Desarrollo y mantenimiento de aplicaciones web con Spring Boot, Angular, React, Flutter y JSF.",
+      "Inicié como desarrollador frontend, pero asumí múltiples tareas a lo largo del tiempo.",
+      "Creación de aplicativos desde cero utilizando Angular y Spring Boot.",
+      "Implementación de módulos en diversos proyectos.",
+      "Optimización y mejora de funcionalidades existentes.",
+      "Creación y gestión de consultas en bases de datos MySQL.",
+      "Primer experiencia laboral, donde desarrollé una gran pasión por la programación.",
     ],
   },
 ];
@@ -356,9 +386,9 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: "https://juancgomezs.github.io/ChatGPT",
+    iconUrl: "https://docsdeveloper.s3.us-east-1.amazonaws.com/Proyectos/demo_chatgpt.png",
     theme: "btn-back-blue",
-    name: "ChatGPT",
+    name: "Demo ChatGPT WebGPU",
     description:
       "Este proyecto es un prototipo de ChatGPT que se ejecuta completamente en el cliente, utilizando tecnologías avanzadas como WebLLM, WebGPU y Web Workers. El objetivo es demostrar cómo es posible compilar y ejecutar un modelo de lenguaje como ChatGPT directamente en el navegador sin necesidad de servidores externos.",
     tecnology: "JS, Html, CSS",
@@ -380,7 +410,8 @@ export const projects = [
     githubIcon: github,
   },
   {
-    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/project-vs-dark.png",
+    iconUrl:
+      "https://docsdeveloper.s3.amazonaws.com/Proyectos/project-vs-dark.png",
     theme: "btn-back-green",
     name: "Extensión Visual Studio Code",
     description:
@@ -394,7 +425,8 @@ export const projects = [
     downloadIcon: download,
   },
   {
-    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/MediaRecorder.png",
+    iconUrl:
+      "https://docsdeveloper.s3.amazonaws.com/Proyectos/MediaRecorder.png",
     theme: "btn-back-blue",
     name: "Capturador de pantalla",
     description:
@@ -406,9 +438,10 @@ export const projects = [
     websiteIcon: web,
   },
   {
-    iconUrl: "https://docsdeveloper.s3.amazonaws.com/Proyectos/project-portfolio-dark.png",
+    iconUrl:
+      "https://docsdeveloper.s3.amazonaws.com/Proyectos/project-portfolio-dark.png",
     theme: "btn-back-blue",
-    name: "Portfolio Profesional",
+    name: "Portafolio Profesional (Astro)",
     description:
       "Este portafolio desarrollado con Astro, es un lugar donde puedes saber más sobre mí, mi trabajo y mis habilidades como desarrollador.",
     tecnology: "Astro, React y tailwind",
@@ -416,5 +449,5 @@ export const projects = [
     githubIcon: github,
     website: "https://juancgomezs.github.io/",
     websiteIcon: web,
-  }
+  },
 ];
