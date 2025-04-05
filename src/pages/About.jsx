@@ -9,6 +9,7 @@ import { experiences, skills, studies } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
 import React, { useState } from "react";
 import Tooltip from "../components/Tooltip";
+import mePhoto from "../assets/images/me.jpg";
 
 const About = () => {
   const [activeTooltip, setActiveTooltip] = useState(null);
@@ -34,7 +35,7 @@ const About = () => {
 
       <div className="mt-5 flex flex-col lg:flex-row items-center gap-6 text-slate-500">
         <img
-          src="/assets/images/me.jpg"
+          src={mePhoto}
           alt="Foto de perfil"
           className="w-40 h-60 object-cover rounded-lg mt-2 lg:mt-0 lg:order-2"
         />
