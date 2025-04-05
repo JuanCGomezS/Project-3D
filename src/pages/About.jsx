@@ -13,13 +13,13 @@ import Tooltip from "../components/Tooltip";
 const About = () => {
   const [activeTooltip, setActiveTooltip] = useState(null);
 
-  const handleMouseEnter = (index) => {
-    setActiveTooltip(index);
-  };
+  const handleMouseEnter = (index) => setActiveTooltip(index);
+  const handleMouseLeave = () => setActiveTooltip(null);
 
-  const handleMouseLeave = () => {
-    setActiveTooltip(null);
-  };
+  const startDate = new Date(2020, 7);
+  const now = new Date();
+  const diffYears = (now - startDate) / (1000 * 60 * 60 * 24 * 365.25);
+  const experience = diffYears.toFixed(1);
 
   return (
     <section className="max-container">
@@ -27,14 +27,19 @@ const About = () => {
         Hola, Soy{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           {" "}
-          Juan Carlos Gomez
+          Juan Gómez
         </span>{" "}
         👋
       </h1>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>
-          Me complace tener esta oportunidad para contarte sobre mí. Como desarrollador de software, mi compromiso con la integridad y la disciplina se combina perfectamente con una mentalidad emprendedora. Esta combinación me permite no solo contribuir significativamente a los equipos en los que trabajo, sino también buscar constantemente formas de mejorar y expandir mis habilidades. Mi pasión por el aprendizaje constante y mi deseo de crecimiento diario son lo que me impulsa a superarme cada día.
+      <div className="mt-5 flex flex-col lg:flex-row items-center gap-6 text-slate-500">
+        <img
+          src="/assets/images/me.jpg"
+          alt="Foto de perfil"
+          className="w-40 h-60 object-cover rounded-lg mt-2 lg:mt-0 lg:order-2"
+        />
+        <p className="flex-1 text-justify">
+          Soy desarrollador de software con {experience} años de experiencia. Me caracteriza la disciplina, la adaptabilidad y una fuerte pasión por el aprendizaje continuo. He trabajado en diversos proyectos que me han exigido incorporar nuevas tecnologías, lenguajes y herramientas, lo que me ha permitido aportar valor, crecer profesionalmente y responder con eficacia a los cambios del entorno.
         </p>
       </div>
 
